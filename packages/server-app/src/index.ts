@@ -5,7 +5,7 @@ const port = 5005; // default port to listen
 
 // define a route handler for the default home page
 app.get( "/", ( req:any, res:any ) => {
-    res.send( "Hello world!" );
+    res.send(`Server is running on ${port}!` );
 } );
 
 app.listen( port, () => {

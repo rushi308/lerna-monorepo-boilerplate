@@ -8,7 +8,7 @@ const app = (0, express_1.default)();
 const port = 5005; // default port to listen
 // define a route handler for the default home page
 app.get("/", (req, res) => {
-    res.send("Hello world!");
+    res.send(`Server is running on ${port}!`);
 });
 app.listen(port, () => {
     // tslint:disable-next-line:no-console
